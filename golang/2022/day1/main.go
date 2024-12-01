@@ -39,7 +39,10 @@ func process_input(input string) (result int) {
 }
 
 func main() {
-	dat, err := os.ReadFile("input.txt")
+	curr_dir, err := os.Getwd()
+	check(err)
+	file_dir := curr_dir + "/golang/2022/day1/input.txt"
+	dat, err := os.ReadFile(file_dir)
 	check(err)
 	fmt.Println(process_input(string(dat)))
 

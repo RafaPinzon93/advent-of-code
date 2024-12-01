@@ -1,7 +1,8 @@
-go 1.22.0
+go 1.23.3
 
 use (
-	./golang/2023
 	./golang/2022
+	./golang/2023
+	./golang/2024/day1
 
 )
